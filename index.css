@@ -1,0 +1,80 @@
+
+/* Needed for bootstrap fixedTop navbar https://getbootstrap.com/components/#navbar-fixed-top */
+body {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#searchboxContainer {
+  /*width: 400px; /*doesn't work. todo fix*/
+}
+
+.bootstrap-typeahead-input, .form-group {
+  margin-top: 10px;
+}
+
+/* push rows closer together*/
+.table>tbody>tr>td {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+/* this is what bootstrap defaults to*/
+table, td {
+  font-size: 14px;
+}
+
+/*From "hosted with love by Github"*/
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+#pageDropdown {
+  float: left;
+}
+
+#bannerAdContainer {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/*bootstrap has a weird border around the table when responsive*/
+.react-bs-table-container.table-responsive{
+  border: none;
+}
+
+/* Dan shank's suggestions*/
+body {
+  background-color: #efefef;
+}
+
+.react-bs-table {
+  margin: 0;
+}
+
+#searchboxContainer, .react-bs-table-container {
+  box-shadow: 2px 4px 8px 0px #888888;
+}
+
+th {
+  background-color: aliceblue;
+  border-bottom-width: 0px;
+}
+
+table, td {
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}

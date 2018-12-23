@@ -1,0 +1,11 @@
+﻿{"sample1":
+[
+{
+    "CASE_NUMBER": 1,
+    "EMPLOYER_NAME": "foo",
+    "JOB_TITLE": "bar",
+    "WORKSITE_CITY": "seattle",
+    "BASE_SALARY": "1000",
+    "PREVAILING_WAGE": "999"
+    }]
+}
