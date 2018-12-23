@@ -1,5 +1,37 @@
-# H1b webapp
+# H1B salary viewer
 
+## Some background into this project
+
+In early 2017 [Roger Hau](https://www.linkedin.com/in/roger-hau-79251b34/) and I decided to do an experiment- how much effort would it take to make $100/month in passive income from running ads/affiliate links on simple internet webapp and/or content play.
+
+I also wanted to learn react/es6 and other modern web dev technologies since at work I was stuck using Saltarelle (C# transpiled to Javascript).
+
+So we decided to emulate some of these h1b salary databases (i.e. https://h1bdata.info), put some ads/affiliate links, and see what we could do!
+
+After a few months, we had a built product, with arguably better UI than some of
+the most popular H1B salary databases (we had autocomplete, single-page app,
+responsive design). Unfortunately, we found out that the game of internet
+traffic -> passive income is mostly an exercise in SEO and content marketing.
+After a few months of trying that (example of marketing on quora
+[here](https://www.quora.com/What-is-average-salary-of-tester-with-4-years-experience-with-h1b-in-USA),
+we gave up and concluded that *trying to make $100/month passive income using
+ads alone is pretty hard*.
+
+Anyways, so here's the code we wrote. Architecture consists of:
+
+- React/es6 front end - see `scripts`
+- Simple Golang backend that issues requests to database - see `src/pi`
+- Nginx web server (see `nginx`)
+- MySQL database running in Google cloud (unfortunately configuration was not backed up in code, but it was basically a dump of excel files from US Department of Labor's website into MySQL)
+
+Our domain was `h1bdata.us` which pointed to a Google cloud machine that is now
+used by `Trifecta Wrangler` (see the redirection from `h1bdata.us`)
+
+One of these days, I'll clean up the code/README so that deployment is even simpler,
+officially open source it (maybe folks would find it useful for displaying any
+sort of "giant spreadsheet as a webapp"), and deploy an instance of it.
+
+-Steven
 
 ## quick start for development
 1. Cd into this directory:
